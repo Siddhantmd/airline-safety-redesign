@@ -18,6 +18,7 @@
 	<div id="pc1"></div>
 	<div id="pc2"></div>
 	<div id="pc3"></div>
+	<div id="pc4"></div>
 	<script>
 	// var lr1={
 	// 	"layer":[
@@ -437,16 +438,9 @@
 					"axis":{
 						"labelPadding":10,
 						"title":null,
-						"ticks":0,
-						// "grid":false,
-						"domain":false,
-						// "gridOpacity":0,
-						// "domainColor":"#ffffff",
-						// "gridColor":"#ffffff"
-					},
-					// "scale":{
-					// 	"sort":"ascending", "field":"value"	
-					// }				
+						"ticks":0,						
+						"domain":false,						
+					},								
 					
 				},
 
@@ -481,4 +475,239 @@
 	vega.embed("#pc1", spec1, {"actions":false});
 	vega.embed("#pc2", spec2, {"actions":false});
 	// vega.embed("#pc3", lr1, {"actions":false});
+	</script>
+	<script>
+		
+  var v4spec={
+	  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+	    "hconcat":[{
+	   	"layer":[{
+	        
+	      	"data":{"url": "data/85-99 reshaped and normalized.csv"},
+			"width":250,
+			"hieght":250,
+			"mark":{
+				"type":"rect",
+				// "size":{
+				// 	"value":20
+				// }
+			},
+			"config":{
+				
+			},
+			"encoding":{
+				
+				"y":{
+					"field":"airline",
+					"type":"nominal",
+					"axis":{
+						"labelPadding":10,
+						"title":null,
+						"ticks":0,
+						// "grid":false,
+						"domain":false,
+						// "gridOpacity":0,
+						// "domainColor":"#ffffff",
+						// "gridColor":"#ffffff"
+					},
+					// "scale":{
+					// 	"sort":"ascending", "field":"value"	
+					// }				
+					
+				},
+
+				"x":{
+					"field":"incident",
+					"type":"nominal",
+					"axis":{
+						"orient":"top",
+						"title":null,
+						"ticks":0,
+						"labelAngle":0,
+						"grid":0,
+						"domain":false
+					}
+				},
+
+				"color":{
+					"field":"scaled value",
+					"type":"ordinal",
+					"legend":null,
+					"scale":{
+						"reverse":false,
+						"range":{
+							"scheme":"orangered"
+						}
+					}
+				}
+	        //1st chart end
+	        }
+	    },{
+      	"data":{"url": "data/85-99 reshaped and normalized.csv"},
+		"width":250,
+		"hieght":250,
+		"mark":{
+			"type":"text",
+		},
+		"encoding":{
+			
+			"y":{
+				"field":"airline",
+				"type":"nominal",
+				"axis":{
+					"labelPadding":10,
+					"title":null,
+					"ticks":0,
+					"domain":false,
+				},
+								
+				
+			},
+
+			"x":{
+				"field":"incident",
+				"type":"nominal",
+				"axis":{
+					"orient":"top",
+					"title":null,
+					"ticks":0,
+					"labelAngle":0,
+					"grid":0,
+					"domain":false
+				}
+			},
+
+			"text":{
+				"field":"value",
+				"type":"ordinal",
+				"legend":null,
+				"scale":{
+					"reverse":false,
+					"range":{
+						"scheme":"orangered"
+					}
+				}
+			}
+
+        
+      	}
+  	  }]
+
+
+	  },// first layer end
+	  {
+	      "layer":[{
+	        
+	        "data":{"url": "data/85-99 reshaped and normalized.csv"},
+			"width":250,
+			"hieght":250,
+			"mark":{
+				"type":"rect",
+				// "size":{
+				// 	"value":20
+				// }
+			},
+			"config":{
+				
+			},
+			"encoding":{
+				
+				"y":{
+					"field":"airline",
+					"type":"nominal",
+					"axis":{
+						"labelPadding":10,
+						"title":null,
+						"ticks":0,
+						"domain":false,
+					},
+				},
+
+				"x":{
+					"field":"incident",
+					"type":"nominal",
+					"axis":{
+						"orient":"top",
+						"title":null,
+						"ticks":0,
+						"labelAngle":0,
+						"grid":0,
+						"domain":false
+					}
+				},
+
+				"color":{
+					"field":"scaled value",
+					"type":"ordinal",
+					"legend":null,
+					"scale":{
+						"reverse":false,
+						"range":{
+							"scheme":"orangered"
+						}
+					}
+				}
+	        
+	      }
+	  	  },
+
+	  	{
+      	"data":{"url": "data/85-99 reshaped and normalized.csv"},
+		"width":250,
+		"hieght":250,
+		"mark":{
+			"type":"text",
+		},
+		"encoding":{
+			
+			"y":{
+				"field":"airline",
+				"type":"nominal",
+				"axis":{
+					"labelPadding":10,
+					"title":null,
+					"ticks":0,
+					"domain":false,
+				},
+								
+				
+			},
+
+			"x":{
+				"field":"incident",
+				"type":"nominal",
+				"axis":{
+					"orient":"top",
+					"title":null,
+					"ticks":0,
+					"labelAngle":0,
+					"grid":0,
+					"domain":false
+				}
+			},
+
+			"text":{
+				"field":"value",
+				"type":"ordinal",
+				"legend":null,
+				"scale":{
+					"reverse":false,
+					"range":{
+						"scheme":"orangered"
+					}
+				}
+			}
+
+        
+      	}
+  	  }
+	        
+	      
+	      ] 
+	  
+	  }
+	  ]
+	  };
+	  vega.embed("#pc4", v4spec,{"actions":null});
+  </script>
 	</script>
