@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<head>
+	<title> Redesigning planecrashes</title>
+	<meta charset="utf-8">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vega/3.0.0-rc2/vega.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vega-lite/2.0.0-beta.10/vega-lite.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vega-embed/3.0.0-beta.19/vega-embed.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vega/3.0.0-rc6/vega.min.js"></script>
+
+	<style media="screen">
+		.vega-actions a {
+      	margin-right: 5px;
+    	}
+    </style>
+</head>
+<body>
+	<h1>Redesigning <a href="https://fivethirtyeight.com/features/should-travelers-avoid-flying-airlines-that-have-had-crashes-in-the-past/"> five thirty eight's plane crashes </a>visualizations</h1>	
+	<div id="pc1"></div>
+	<div id="pc2"></div>
+	<div id="pc3"></div>
+	<script>
+	// var lr1={
+	// 	"layer":[
+	// 		{		
+	// 		"$schema":"https://vega.github.io/schema/vega-lite/v2.json",
+	// 		//hconcat1 begin
+	// 		"hconcat":[{
+	// 		//chart 1
+	// 			"data":{"url": "data/85-99 reshaped and normalized.csv"},
+	// 			"width":250,
+	// 			"hieght":250,
+	// 			"mark":{
+	// 				"type":"rect",
+	// 			},
+	// 			"encoding":{
+					
+	// 				"y":{
+	// 					"field":"airline",
+	// 					"type":"nominal",
+	// 					"axis":{
+	// 						"labelPadding":10,
+	// 						"title":null,
+	// 						"ticks":0,
+	// 						// "grid":false,
+	// 						"domain":false,
+	// 					},				
+	// 				},
+
+	// 				"x":{
+	// 					"field":"incident",
+	// 					"type":"nominal",
+	// 					"axis":{
+	// 						"orient":"top",
+	// 						"title":null,
+	// 						"ticks":0,
+	// 						"labelAngle":0,
+	// 						"grid":0,
+	// 						"domain":false
+	// 					}
+	// 				},
+
+	// 				"color":{
+	// 					"field":"scaled value",
+	// 					"type":"ordinal",
+	// 					"legend":null,
+	// 					"scale":{
+	// 						"reverse":false,
+	// 						"range":{
+	// 							"scheme":"orangered"
+	// 						}
+	// 					}
+	// 				}
+	// 			}
+	// 		},
+	// 		//chart 2
+	// 		{
+	// 			"data":{"url": "data/00-14 reshaped and normalize.csv"},
+	// 			"width":250,
+	// 			"hieght":250,
+	// 			"mark":{
+	// 				"type":"rect",
+	// 			},
+	// 			"encoding":{
+	// 				"y":{
+	// 					"field":"airline",
+	// 					"type":"nominal",
+	// 					"axis":{
+	// 						"labelPadding":10,
+	// 						"title":null,
+	// 						"ticks":0,
+	// 						"domain":false,
+	// 					},				
+	// 				},
+
+	// 				"x":{
+	// 					"field":"incident",
+	// 					"type":"nominal",
+	// 					"axis":{
+	// 						"orient":"top",
+	// 						"title":null,
+	// 						"ticks":0,
+	// 						"labelAngle":0,
+	// 						"grid":0,
+	// 						"domain":false
+	// 					}
+	// 				},
+
+	// 					"color":{
+	// 						"field":"scaled value",
+	// 						"type":"ordinal",
+	// 						"legend":null,
+	// 						"scale":{
+	// 							"reverse":false,
+	// 							"range":{
+	// 								"scheme":"orangered"
+	// 							}
+	// 						}
+	// 					}
+	// 				}
+	// 			}
+	// 			]
+	// 		//hconcat1 end
+	// 	},
+	// //layer 1 end, layer 2 begin
+	// 	{	
+	// 		"$schema":"https://vega.github.io/schema/vega-lite/v2.json",
+	// 		"hconcat":[{
+	// 		//chart 3
+	// 			"data":{"url": "data/85-99 reshaped and normalized.csv"},
+	// 			"width":250,
+	// 			"hieght":250,
+	// 			"mark":{
+	// 				"type":"text",
+	// 			},				
+	// 			"encoding":{
+					
+	// 				"y":{
+	// 					"field":"airline",
+	// 					"type":"nominal",
+	// 					"axis":{
+	// 						"labelPadding":10,
+	// 						"title":null,
+	// 						"ticks":0,
+	// 						"domain":false,
+	// 					},
+	// 				},
+
+	// 				"x":{
+	// 					"field":"incident",
+	// 					"type":"nominal",
+	// 					"axis":{
+	// 						"orient":"top",
+	// 						"title":null,
+	// 						"ticks":0,
+	// 						"labelAngle":0,
+	// 						"grid":0,
+	// 						"domain":false
+	// 					}
+	// 				},
+
+	// 				"text":{
+	// 					"field":"value",
+	// 					"type":"ordinal",
+	// 					"legend":null,
+	// 					"scale":{
+	// 						"reverse":false,
+	// 						"range":{
+	// 							"scheme":"orangered"
+	// 						}
+	// 					}
+	// 				}
+	// 			}
+	// 		},
+	// 		//chart 4
+	// 		{
+	// 			"data":{"url": "data/00-14 reshaped and normalize.csv"},
+	// 			"width":250,
+	// 			"hieght":250,
+	// 			"mark":{
+	// 				"type":"text",
+	// 			},
+	// 			"encoding":{
+	// 				"y":{
+	// 					"field":"airline",
+	// 					"type":"nominal",
+	// 					"axis":{
+	// 						"labelPadding":10,
+	// 						"title":null,
+	// 						"ticks":0,
+	// 						"domain":false,
+	// 					},					
+	// 				},
+
+	// 				"x":{
+	// 					"field":"incident",
+	// 					"type":"nominal",
+	// 					"axis":{
+	// 						"orient":"top",
+	// 						"title":null,
+	// 						"ticks":0,
+	// 						"labelAngle":0,
+	// 						"grid":0,
+	// 						"domain":false
+	// 					}
+	// 				},
+
+	// 				"text":{
+	// 					"field":"value",
+	// 					"type":"ordinal",
+	// 					"legend":null,
+	// 					"scale":{
+	// 						"reverse":true,
+	// 						"range":{
+	// 							"scheme":"orangered"
+	// 						}
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+			
+	// 	]
+	// 	}
+	// ]
+	// };
+	var spec1={
+		"$schema":"https://vega.github.io/schema/vega-lite/v2.json",
+		
+		// "transform":[
+		// 	"calculate":"datum."
+		// ]
+		"hconcat":[{
+			"data":{"url": "data/85-99 reshaped and normalized.csv"},
+			"width":250,
+			"hieght":250,
+			"mark":{
+				"type":"rect",
+				// "size":{
+				// 	"value":20
+				// }
+			},
+			"config":{
+				
+			},
+			"encoding":{
+				
+				"y":{
+					"field":"airline",
+					"type":"nominal",
+					"axis":{
+						"labelPadding":10,
+						"title":null,
+						"ticks":0,
+						// "grid":false,
+						"domain":false,
+						// "gridOpacity":0,
+						// "domainColor":"#ffffff",
+						// "gridColor":"#ffffff"
+					},
+					// "scale":{
+					// 	"sort":"ascending", "field":"value"	
+					// }				
+					
+				},
+
+				"x":{
+					"field":"incident",
+					"type":"nominal",
+					"axis":{
+						"orient":"top",
+						"title":null,
+						"ticks":0,
+						"labelAngle":0,
+						"grid":0,
+						"domain":false
+					}
+				},
+
+				"color":{
+					"field":"scaled value",
+					"type":"ordinal",
+					"legend":null,
+					"scale":{
+						"reverse":false,
+						"range":{
+							"scheme":"orangered"
+						}
+					}
+				}
+			}
+		},
+		{
+			"data":{"url": "data/00-14 reshaped and normalize.csv"},
+			"width":250,
+			"hieght":250,
+			"mark":{
+				"type":"rect",
+				// "size":{
+				// 	"value":20
+				// }
+			},
+			"config":{
+				
+			},
+			"encoding":{
+				
+				"y":{
+					"field":"airline",
+					"type":"nominal",
+					"axis":{
+						"labelPadding":10,
+						"title":null,
+						"ticks":0,
+						// "grid":false,
+						"domain":false,
+						// "gridOpacity":0,
+						// "domainColor":"#ffffff",
+						// "gridColor":"#ffffff"
+					},
+					// "scale":{
+					// 	"sort":"ascending", "field":"value"	
+					// }				
+					
+				},
+
+				"x":{
+					"field":"incident",
+					"type":"nominal",
+					"axis":{
+						"orient":"top",
+						"title":null,
+						"ticks":0,
+						"labelAngle":0,
+						"grid":0,
+						"domain":false
+					}
+				},
+
+				"color":{
+					"field":"scaled value",
+					"type":"ordinal",
+					"legend":null,
+					"scale":{
+						"reverse":false,
+						"range":{
+							"scheme":"orangered"
+						}
+					}
+				}
+			}
+		}
+		]
+	};
+	var spec2={
+		"$schema":"https://vega.github.io/schema/vega-lite/v2.json",
+		
+		// "transform":[
+		// 	"calculate":"datum."
+		// ]
+		"hconcat":[{
+			"data":{"url": "data/85-99 reshaped and normalized.csv"},
+			"width":250,
+			"hieght":250,
+			"mark":{
+				"type":"text",
+				// "size":{
+				// 	"value":20
+				// }
+			},
+			"config":{
+				
+			},
+			"encoding":{
+				
+				"y":{
+					"field":"airline",
+					"type":"nominal",
+					"axis":{
+						"labelPadding":10,
+						"title":null,
+						"ticks":0,
+						// "grid":false,
+						"domain":false,
+						// "gridOpacity":0,
+						// "domainColor":"#ffffff",
+						// "gridColor":"#ffffff"
+					},
+					// "scale":{
+					// 	"sort":"ascending", "field":"value"	
+					// }				
+					
+				},
+
+				"x":{
+					"field":"incident",
+					"type":"nominal",
+					"axis":{
+						"orient":"top",
+						"title":null,
+						"ticks":0,
+						"labelAngle":0,
+						"grid":0,
+						"domain":false
+					}
+				},
+
+				"text":{
+					"field":"value",
+					"type":"ordinal",
+					"legend":null,
+					"scale":{
+						"reverse":false,
+						"range":{
+							"scheme":"orangered"
+						}
+					}
+				}
+			}
+		},
+		{
+			"data":{"url": "data/00-14 reshaped and normalize.csv"},
+			"width":250,
+			"hieght":250,
+			"mark":{
+				"type":"text",
+				// "size":{
+				// 	"value":20
+				// }
+			},
+			"config":{
+				
+			},
+			"encoding":{
+				
+				"y":{
+					"field":"airline",
+					"type":"nominal",
+					"axis":{
+						"labelPadding":10,
+						"title":null,
+						"ticks":0,
+						// "grid":false,
+						"domain":false,
+						// "gridOpacity":0,
+						// "domainColor":"#ffffff",
+						// "gridColor":"#ffffff"
+					},
+					// "scale":{
+					// 	"sort":"ascending", "field":"value"	
+					// }				
+					
+				},
+
+				"x":{
+					"field":"incident",
+					"type":"nominal",
+					"axis":{
+						"orient":"top",
+						"title":null,
+						"ticks":0,
+						"labelAngle":0,
+						"grid":0,
+						"domain":false
+					}
+				},
+
+				"text":{
+					"field":"value",
+					"type":"ordinal",
+					"legend":null,
+					"scale":{
+						"reverse":true,
+						"range":{
+							"scheme":"orangered"
+						}
+					}
+				}
+			}
+		}
+		]
+	};
+	vega.embed("#pc1", spec1, {"actions":false});
+	vega.embed("#pc2", spec2, {"actions":false});
+	// vega.embed("#pc3", lr1, {"actions":false});
+	</script>

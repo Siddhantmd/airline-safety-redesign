@@ -1,0 +1,169 @@
+airline,incident,value,scaled value
+Aer Lingus,Fatal accidents,0,0
+Aer Lingus,Fatalities,0,0
+Aer Lingus,Incidents,8,0.975609756
+Aeroflot*,Fatal accidents,15,10
+Aeroflot*,Fatalities,139,1.04826546
+Aeroflot*,Incidents,82,10
+Aerolineas Argentinas,Fatal accidents,0,0
+Aerolineas Argentinas,Fatalities,0,0
+Aerolineas Argentinas,Incidents,20,2.43902439
+Aeromexico*,Fatal accidents,2,1.333333333
+Aeromexico*,Fatalities,139,1.04826546
+Aeromexico*,Incidents,7,0.853658537
+Air Canada,Fatal accidents,0,0
+Air Canada,Fatalities,0,0
+Air Canada,Incidents,1,0.12195122
+Air France,Fatal accidents,2,1.333333333
+Air France,Fatalities,34,0.256410256
+Air France,Incidents,6,0.731707317
+Air India*,Fatal accidents,1,0.666666667
+Air India*,Fatalities,492,3.71040724
+Air India*,Incidents,3,0.365853659
+Air New Zealand*,Fatal accidents,0,0
+Air New Zealand*,Fatalities,0,0
+Air New Zealand*,Incidents,5,0.609756098
+Alaska Airlines*,Fatal accidents,0,0
+Alaska Airlines*,Fatalities,0,0
+Alaska Airlines*,Incidents,7,0.853658537
+Alitalia,Fatal accidents,4,2.666666667
+Alitalia,Fatalities,93,0.701357466
+Alitalia,Incidents,13,1.585365854
+All Nippon Airways,Fatal accidents,1,0.666666667
+All Nippon Airways,Fatalities,1,0.007541478
+All Nippon Airways,Incidents,2,0.243902439
+American*,Fatal accidents,1,0.666666667
+American*,Fatalities,25,0.188536953
+American*,Incidents,5,0.609756098
+Austrian Airlines,Fatal accidents,0,0
+Austrian Airlines,Fatalities,0,0
+Austrian Airlines,Incidents,4,0.487804878
+Avianca,Fatal accidents,10,6.666666667
+Avianca,Fatalities,1058,7.978883861
+Avianca,Incidents,16,1.951219512
+British Airways*,Fatal accidents,0,0
+British Airways*,Fatalities,0,0
+British Airways*,Incidents,2,0.243902439
+Cathay Pacific*,Fatal accidents,0,0
+Cathay Pacific*,Fatalities,0,0
+Cathay Pacific*,Incidents,0,0
+China Airlines,Fatal accidents,10,6.666666667
+China Airlines,Fatalities,855,6.447963801
+China Airlines,Incidents,19,2.317073171
+Condor,Fatal accidents,3,2
+Condor,Fatalities,50,0.377073906
+Condor,Incidents,6,0.731707317
+COPA,Fatal accidents,2,1.333333333
+COPA,Fatalities,111,0.837104072
+COPA,Incidents,7,0.853658537
+Delta / Northwest*,Fatal accidents,2,1.333333333
+Delta / Northwest*,Fatalities,81,0.610859729
+Delta / Northwest*,Incidents,5,0.609756098
+Egyptair,Fatal accidents,7,4.666666667
+Egyptair,Fatalities,657,4.954751131
+Egyptair,Incidents,19,2.317073171
+El Al,Fatal accidents,4,2.666666667
+El Al,Fatalities,16,0.12066365
+El Al,Incidents,4,0.487804878
+Ethiopian Airlines,Fatal accidents,13,8.666666667
+Ethiopian Airlines,Fatalities,444,3.34841629
+Ethiopian Airlines,Incidents,67,8.170731707
+Finnair,Fatal accidents,0,0
+Finnair,Fatalities,0,0
+Finnair,Incidents,3,0.365853659
+Garuda Indonesia,Fatal accidents,6,4
+Garuda Indonesia,Fatalities,551,4.155354449
+Garuda Indonesia,Incidents,21,2.56097561
+Gulf Air,Fatal accidents,0,0
+Gulf Air,Fatalities,0,0
+Gulf Air,Incidents,4,0.487804878
+Hawaiian Airlines,Fatal accidents,0,0
+Hawaiian Airlines,Fatalities,0,0
+Hawaiian Airlines,Incidents,0,0
+Iberia,Fatal accidents,1,0.666666667
+Iberia,Fatalities,164,1.236802413
+Iberia,Incidents,4,0.487804878
+Japan Airlines,Fatal accidents,1,0.666666667
+Japan Airlines,Fatalities,429,3.235294118
+Japan Airlines,Incidents,2,0.243902439
+Kenya Airways,Fatal accidents,0,0
+Kenya Airways,Fatalities,0,0
+Kenya Airways,Incidents,9,1.097560976
+KLM*,Fatal accidents,1,0.666666667
+KLM*,Fatalities,2,0.015082956
+KLM*,Incidents,5,0.609756098
+Korean Air,Fatal accidents,4,2.666666667
+Korean Air,Fatalities,319,2.405731523
+Korean Air,Incidents,9,1.097560976
+LAN Airlines,Fatal accidents,3,2
+LAN Airlines,Fatalities,27,0.20361991
+LAN Airlines,Incidents,4,0.487804878
+Lufthansa*,Fatal accidents,0,0
+Lufthansa*,Fatalities,1,0.007541478
+Lufthansa*,Incidents,2,0.243902439
+Malaysia Airlines,Fatal accidents,1,0.666666667
+Malaysia Airlines,Fatalities,43,0.32428356
+Malaysia Airlines,Incidents,4,0.487804878
+Pakistan International,Fatal accidents,11,7.333333333
+Pakistan International,Fatalities,873,6.583710407
+Pakistan International,Incidents,30,3.658536585
+Philippine Airlines,Fatal accidents,13,8.666666667
+Philippine Airlines,Fatalities,233,1.757164404
+Philippine Airlines,Incidents,22,2.682926829
+Qantas*,Fatal accidents,0,0
+Qantas*,Fatalities,0,0
+Qantas*,Incidents,1,0.12195122
+Royal Air Maroc,Fatal accidents,13,8.666666667
+Royal Air Maroc,Fatalities,224,1.689291101
+Royal Air Maroc,Incidents,22,2.682926829
+SAS*,Fatal accidents,0,0
+SAS*,Fatalities,0,0
+SAS*,Incidents,10,1.219512195
+Saudi Arabian,Fatal accidents,3,2
+Saudi Arabian,Fatalities,473,3.567119155
+Saudi Arabian,Incidents,11,1.341463415
+Singapore Airlines,Fatal accidents,1,0.666666667
+Singapore Airlines,Fatalities,3,0.022624434
+Singapore Airlines,Incidents,1,0.12195122
+South African,Fatal accidents,2,1.333333333
+South African,Fatalities,317,2.390648567
+South African,Incidents,4,0.487804878
+Southwest Airlines,Fatal accidents,0,0
+Southwest Airlines,Fatalities,0,0
+Southwest Airlines,Incidents,0,0
+Sri Lankan / AirLanka,Fatal accidents,4,2.666666667
+Sri Lankan / AirLanka,Fatalities,56,0.422322775
+Sri Lankan / AirLanka,Incidents,8,0.975609756
+SWISS*,Fatal accidents,2,1.333333333
+SWISS*,Fatalities,376,2.835595777
+SWISS*,Incidents,3,0.365853659
+TACA,Fatal accidents,5,3.333333333
+TACA,Fatalities,15,0.113122172
+TACA,Incidents,15,1.829268293
+TAM,Fatal accidents,3,2
+TAM,Fatalities,84,0.633484163
+TAM,Incidents,7,0.853658537
+TAP - Air Portugal,Fatal accidents,0,0
+TAP - Air Portugal,Fatalities,0,0
+TAP - Air Portugal,Incidents,0,0
+Thai Airways,Fatal accidents,3,2
+Thai Airways,Fatalities,235,1.77224736
+Thai Airways,Incidents,6,0.731707317
+Turkish Airlines,Fatal accidents,2,1.333333333
+Turkish Airlines,Fatalities,43,0.32428356
+Turkish Airlines,Incidents,5,0.609756098
+United / Continental*,Fatal accidents,1,0.666666667
+United / Continental*,Fatalities,58,0.437405732
+United / Continental*,Incidents,3,0.365853659
+US Airways / America West*,Fatal accidents,4,2.666666667
+US Airways / America West*,Fatalities,119,0.897435897
+US Airways / America West*,Incidents,8,0.975609756
+Vietnam Airlines,Fatal accidents,6,4
+Vietnam Airlines,Fatalities,356,2.684766214
+Vietnam Airlines,Incidents,15,1.829268293
+Virgin Atlantic,Fatal accidents,0,0
+Virgin Atlantic,Fatalities,0,0
+Virgin Atlantic,Incidents,1,0.12195122
+Xiamen Airlines,Fatal accidents,3,2
+Xiamen Airlines,Fatalities,248,1.870286576
+Xiamen Airlines,Incidents,27,3.292682927
